@@ -9,7 +9,7 @@ import com.test.filmstest.R
 import com.test.filmstest.data.model.FilmEntity
 
 class FilmsAdapter(
-    private val films: List<FilmEntity>,
+    private var films: List<FilmEntity>,
     private val onItemClicked: (FilmEntity) -> Unit
 ) : RecyclerView.Adapter<FilmsAdapter.FilmViewHolder>() {
 
@@ -35,4 +35,5 @@ class FilmsAdapter(
     }
 
     override fun getItemCount() = films.size
+
 }

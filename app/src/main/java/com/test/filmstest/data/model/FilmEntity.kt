@@ -21,8 +21,6 @@ data class FilmCharacterCrossRef(
     val characterId: Long
 )
 
-
-
 @Entity(tableName = "films")
 @TypeConverters(Converters::class)
 data class FilmEntity (

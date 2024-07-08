@@ -39,7 +39,6 @@ class CharacterFragment : Fragment() {
         shimmerViewContainer = binding.shimmerViewContainer
         val recyclerView = binding.recyclerView
         recyclerView.layoutManager = LinearLayoutManager(context)
-        recyclerView.setPadding(0, resources.getDimensionPixelSize(R.dimen.action_bar_size), 0, 0)
         activity?.title = filmTitle
         (requireActivity() as? MainActivity)?.showSystemUI()
 

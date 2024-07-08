@@ -3,8 +3,8 @@ package com.test.filmstest.data.repository
 import androidx.lifecycle.LiveData
 import com.test.filmstest.data.database.FilmDao
 import com.test.filmstest.data.model.FilmEntity
-import com.test.filmstest.data.model.FilmWithCharacters
 import com.test.filmstest.data.network.ApiService
+import kotlinx.coroutines.flow.Flow
 
 class FilmRepository(private val apiService: ApiService, private val filmDao: FilmDao) {
 
@@ -16,11 +16,13 @@ class FilmRepository(private val apiService: ApiService, private val filmDao: Fi
         }
     }
 
+    fun searchFilmsByTitle(title: String): Flow<List<FilmEntity>> {
+        return filmDao.searchFilmsByTitleFlow("%$title%")
+    }
+
     fun getAllFilms(): LiveData<List<FilmEntity>> {
         return filmDao.getAllFilms()
     }
 
-    fun getFilmWithCharacters(filmId: Long): LiveData<FilmWithCharacters> {
-        return filmDao.getFilmWithCharacters(filmId)
-    }
 }
+

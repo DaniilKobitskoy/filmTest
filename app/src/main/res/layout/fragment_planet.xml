@@ -18,6 +18,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="24sp"
+            android:textColor="@color/black"
             android:textStyle="bold" />
 
         <TextView
@@ -26,7 +27,9 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/planetName"
             android:layout_marginTop="7dp"
-            android:textSize="16sp" />
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            />
         <TextView
             android:id="@+id/orbital_period"
             android:layout_width="wrap_content"
@@ -40,42 +43,54 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/orbital_period"
             android:layout_marginTop="7dp"
-            android:textSize="16sp" />
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            />
         <TextView
             android:id="@+id/climate"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/diameter"
             android:layout_marginTop="7dp"
-            android:textSize="16sp" />
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            />
         <TextView
             android:id="@+id/gravity"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/climate"
             android:layout_marginTop="7dp"
-            android:textSize="16sp" />
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            />
         <TextView
             android:id="@+id/terrain"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/gravity"
             android:layout_marginTop="7dp"
-            android:textSize="16sp" />
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            />
         <TextView
             android:id="@+id/surface_water"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/terrain"
             android:layout_marginTop="7dp"
-            android:textSize="16sp" />
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            />
         <TextView
             android:id="@+id/population"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/surface_water"
             android:layout_marginTop="7dp"
-            android:textSize="16sp" />
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            />
     </RelativeLayout>
 
     <com.facebook.shimmer.ShimmerFrameLayout
